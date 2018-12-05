@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>House Price and Demographics Trends 2008-2016</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="shortcut icon" href="">
+</head>
+
+<body>
+  <div id="container">
+
+    <div class="row row-top" id="top">
+      <div class="container-fluid">
+      <h1>House Price and Demographic Trends 2008-2016</h1>
+            <p style="text-align:center"> Created by: Chenchen Pan and Flora Wang</p>
+      </div>
+    </div>
+    <br>
+
+    <div class="row row-middle">
+      <div class="col-md-4 col-left col">
+        <div class="well" style="height:478px">
+          <p> Here we explore how house values (as measured by the Zillow Home Value Index)
+            and demographics have changed between 2008 and 2016. </p>
+					<h3> Approach: </h3>
+					<ol>
+						<li> <p> Show the overall trends of percent change in racial groups and house values on the county and state level across the U.S. </p></li>
+						<li> <p>Define and calculate an index as </p></li>
+						<p>    Index-pop = Change in Population &frasl; Change in House Value</p>
+						<p>    Index-race = % Change in House Value &frasl; % Change in Race</p>
+						<p>    to quantify differences between counties.</p>
+						<li> <p>to quantify differences between counties.</p></li>
+						<li> <p>Explore specific counties/states with extreme index values </p></li>
+					</ol>
+
+        </div>
+      </div>
+      <div class="col-md-8 col-right col">
+        <div class="well" id="zhvi">
+          <div class='tableauPlaceholder' id='viz1543964091597' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USHouseValueTrend&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='USHouseValueTrend&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USHouseValueTrend&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1543964091597');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='454px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row row-middle">
+      <div class="col-md-4 col-left col">
+        <div class="well" style="height:551px">
+          <h3>Overall trends for 2008-2016 (1263 counties)</h3>
+					<p> To the right are two maps, showing the absolute average house value change and the absolute population change for each county.</p>
+					<p> To better understand and quantify the relationship between the change in house value and the change in demographics, we calculated
+					and visualized the ratio of this relationship in the index analysis below.</p>
+					<p> It's hard to observe the correlation between demographic change and house value change on the county level, but there are some interesting findings on the state level.</p>
+
+					<h3> State Level Trends</h3>
+					<p> Overall, the population change and house value change are positively correlated, except 6 states (AZ, WI, GA, OH, VT, CT ).</p>
+					<p> To future explore data on the state level, click through the different tabs in the Index Analysis and
+					compare two specific states in Demographic Change vs. House Value Change comparison charts.</p>
+				</div>
+      </div>
+      <div class="col-md-8 col-right col">
+      <div class="well" id="largewell">
+        <div class='tableauPlaceholder' id='viz1543961725490' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndexAnalysisStateLevel&#47;OverallTrend&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IndexAnalysisStateLevel&#47;OverallTrend' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndexAnalysisStateLevel&#47;OverallTrend&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1543961725490');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='527px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </div>
+    </div>
+    <br>
+
+    <div class="row row-middle">
+      <div class="col-md-12 col">
+      <div class="well" id="largewell2">
+        <div class='tableauPlaceholder' id='viz1543963250609' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndexAnalysisStateLevel&#47;IndexAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IndexAnalysisStateLevel&#47;IndexAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndexAnalysisStateLevel&#47;IndexAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1543963250609');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+      </div>
+		</div>
+      <br>
+
+		<div class="row row-middle">
+      <div class="col-md-12 col">
+      <div class="well" id="largewell3">
+        <div class='tableauPlaceholder' id='viz1543963597847' style='position: relative; padding-left: 160px'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DemographicChangeVSHouseValueChange&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DemographicChangeVSHouseValueChange&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DemographicChangeVSHouseValueChange&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1543963597847');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+      </div>
+    </div>
+    <br>
+
+  </div>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
