@@ -1,5 +1,5 @@
 html { height:100%; width: 100%; }
-body { height:100%; width: 100%; padding: 15px; color: #6D6E72;}
+body { height:100%; width: 100%; padding: 15px; color: #6D6E72; margin:100px; margin-top: 20px; max-width: 800px;}
 
 #svg-col {
 	text-align: center;
@@ -13,58 +13,62 @@ body { height:100%; width: 100%; padding: 15px; color: #6D6E72;}
   margin: 0;
 	border: 0;
 	padding: 0;
-	background-color: #008080;
-	color: white;
-	height: 100px;
 }
 
-div.well {
-	height: 100%;
-	margin: 0;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: white;
-	border-color: #008080;
-	border-width: 2px;
+.graph {
+
 }
 
-#largewell {
-	padding-left: 100px;
-	padding-right: 70px;
+div {
+	display: block;
 }
 
-#largewell2 {
-	padding-left: 100px;
-	padding-right: 70px;
+.text {
+	color: black;
+	margin-left: 100px;
+}
+
+.caption {
+	font-size: 14px;
 }
 
 h1 {
-	font-family: 'Open Sans';
-	font-size: 24px;
+	font-family: 'nyt-cheltenham','georgia','times new roman','times','serif';
+	font-size: 30px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
+	font-weight: 700;
 	line-height: 26.4px;
-	text-align: center;
+	/*text-align: center;*/
+	font-style: italic;
+	color: black;
+	max-width: 600px;
 }
 
 h3 {
 	font-family: 'Open Sans';
-	font-size: 18px;
+	font-size: 22px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 15.4px;
+	line-height: 26.4px;
 }
 
 
 p {
 	font-family: 'Open Sans';
-	font-size: 14px;
+	font-size: 18px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 20px;
-	/*text-align:center;*/
+	/*display: block;*/
+}
+.title-break {
+	font-family: 'Open Sans';
+    font-size: 28px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    display: block;
+    color: black;
 }

@@ -4,98 +4,203 @@
 <head>
 	<title>House Price and Demographics Trends 2008-2016</title>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-  <link rel="shortcut icon" href="">
+	<link rel="shortcut icon" href="">
 </head>
 
 <body>
-  <div id="container">
+	<div id="container">
 
-    <div class="row row-top" id="top">
-      <div class="container-fluid">
-      <h1>House Price and Demographic Trends 2008-2016</h1>
-            <p style="text-align:center"> Created by: Chenchen Pan and Flora Wang</p>
-      </div>
-    </div>
-    <br>
-
-    <div class="row row-middle">
-      <div class="col-md-4 col-left col">
-        <div class="well" style="height:478px">
-          <p> Here we explore how house values (as measured by the Zillow Home Value Index)
-            and demographics have changed between 2008 and 2016. </p>
-					<h3> Approach: </h3>
-					<ol>
-						<li> <p> Show the overall trends of percent change in racial groups and house values on the county and state level across the U.S. </p></li>
-						<li> <p>Define and calculate an index as </p></li>
-						<p>    Index-pop = Change in Population &frasl; Change in House Value</p>
-						<p>    Index-race = % Change in House Value &frasl; % Change in Race</p>
-						<p>    to quantify differences between counties.</p>
-						<li> <p>to quantify differences between counties.</p></li>
-						<li> <p>Explore specific counties/states with extreme index values </p></li>
-					</ol>
-
-        </div>
-      </div>
-      <div class="col-md-8 col-right col">
-        <div class="well" id="zhvi">
-          <div class='tableauPlaceholder' id='viz1543964091597' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USHouseValueTrend&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='USHouseValueTrend&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USHouseValueTrend&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1543964091597');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='454px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-        </div>
-      </div>
-    </div>
-    <br>
-
-    <div class="row row-middle">
-      <div class="col-md-4 col-left col">
-        <div class="well" style="height:551px">
-          <h3>Overall trends for 2008-2016 (1263 counties)</h3>
-					<p> To the right are two maps, showing the absolute average house value change and the absolute population change for each county.</p>
-					<p> To better understand and quantify the relationship between the change in house value and the change in demographics, we calculated
-					and visualized the ratio of this relationship in the index analysis below.</p>
-					<p> It's hard to observe the correlation between demographic change and house value change on the county level, but there are some interesting findings on the state level.</p>
-
-					<h3> State Level Trends</h3>
-					<p> Overall, the population change and house value change are positively correlated, except 6 states (AZ, WI, GA, OH, VT, CT ).</p>
-					<p> To future explore data on the state level, click through the different tabs in the Index Analysis and
-					compare two specific states in Demographic Change vs. House Value Change comparison charts.</p>
-				</div>
-      </div>
-      <div class="col-md-8 col-right col">
-      <div class="well" id="largewell">
-        <div class='tableauPlaceholder' id='viz1543961725490' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndexAnalysisStateLevel&#47;OverallTrend&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IndexAnalysisStateLevel&#47;OverallTrend' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndexAnalysisStateLevel&#47;OverallTrend&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1543961725490');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='527px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      </div>
-    </div>
-    </div>
-    <br>
-
-    <div class="row row-middle">
-      <div class="col-md-12 col">
-      <div class="well" id="largewell2">
-        <div class='tableauPlaceholder' id='viz1543963250609' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndexAnalysisStateLevel&#47;IndexAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IndexAnalysisStateLevel&#47;IndexAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndexAnalysisStateLevel&#47;IndexAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1543963250609');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      </div>
-      </div>
+		<div class="row row-top" id="top">
+			<div class="container-fluid" >
+				<div class="text">
+				<h1>House Price and Demographic Trends 2008-2016</h1>
+				<p style="font-size: 14px"> By: Chenchen Pan and Flora Wang</p>
+				<p style="font-size: 14px"> December 8, 2018</p>
+			</div>
+			</div>
 		</div>
-      <br>
+		<br>
 
-		<div class="row row-middle">
-      <div class="col-md-12 col">
-      <div class="well" id="largewell3" style="padding-left: 110px">
-        <div class='tableauPlaceholder' id='viz1543978604952' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DemographicChangeVSHouseValueChange&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DemographicChangeVSHouseValueChange&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DemographicChangeVSHouseValueChange&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1543978604952');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-			      </div>
-      </div>
-    </div>
-    <br>
+		<div class="text">
+			<p> Many people would assume that demographics and house values are
+correlated, particularly with the United State’s history of segregation
+and redlining and the correlation between socio-economic status
+and demographics. However, even with the rise in prediction and
+data analysis tools, there have not been many projects that include
+demographics in their prediction calculation. In addition, there
+has tended to be more of a focus on predicting individual house
+values based on the houses features and amenities. Research and
+visualizations that have included demographic data with housing
+have tended to focus on one particular city or region. Our project
+hopes to get a broader picture of house values and demographics
+in order to possibly notice trends across counties or states. </p>
+		</div>
 
-  </div>
 
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<div class="text">
+			<p> House values (as measured by the Zillow Home Value Index)
+				and demographics have changed significantly between 2008 and 2016. The decreases in the overall percent
+change in house value between 2008 and 2012 occurred during the time
+of the recession and the housing bubble bursting. The increases
+in average percent change in house value between 2012 and 2016
+coincide with the subsequent economic boom.</p>
+				<!-- <h3> First, we showed the overall trends of percent change in racial groups and house values on the county and state level across the U.S. </h3> -->
+		</div>
+
+		<div class="graph" style="margin-left:90px">
+			<div class='tableauPlaceholder' id='viz1543964091597' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USHouseValueTrend&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='USHouseValueTrend&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USHouseValueTrend&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1543964091597');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='470px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			<p class="caption">(Hint: Use the slider to filter for time.)</p>
+		</div>
+		<br>
+
+		<div class="text">
+			<p> This trend is not necessarily true uniformly across the country. Different counties in
+				different parts of the country show that there is a mix of increases and decreases in house value.
+				This may be because different states and
+counties have localized changes that may affect percent change
+in house value or a particular demographic group. For instance, different
+metropolitan areas have experienced gentrification, particularly
+in the recent years. Along with gentrification comes an influx of
+wealth, increase house value prices, and displacement of people who
+cannot afford to live in the area.
+				However, there is a general trend of a increasing population for most counties in the United States.
+			</p>
+		</div>
+		<br>
+
+		<div class="graph" style="margin-left:90px">
+			<div class='tableauPlaceholder' id='viz1544338770800' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Tendsfor2008-2016Map&#47;OverallTrend&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Tendsfor2008-2016Map&#47;OverallTrend' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Tendsfor2008-2016Map&#47;OverallTrend&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544338770800');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='554px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			<br>
+			<p class="caption">(Hint: Search for specific counties on both of the maps!)</p>
+		</div>
+		<br>
+
+		<div class="text">
+			<h3> An Index Analysis </h3>
+			<p> How do we compare the relationship between change in house value and demographics? <p>
+			<p> One way of doing this is through an index. </p>
+			<br>
+			<!-- <h3>Second, we defined and calculated an index to quantify differences between counties.</h3> -->
+			<p>    Index-population = % Change in House Value &frasl; % Change in Total Population</p>
+			<p>    Index-race = % Change in House Value &frasl; % Change in Race</p>
+			<br>
+			<p>  Each index value is a ratio between
+the percent change in house value and the percent change in the
+demographic group. A ratio of between 0 and 1 means that the percent change
+in house value is significantly lower than the percent change
+in the demographic group. A negative index value means that the percent change in house value
+and the percent change in the demographic group is not in the same direction- one value is
+positive, and the other is negative. A positive index value means that the percent change
+in house value and the percent change in the demographic group is either both positive or both negative.</p>
+
+			<br>
+
+		</div>
+
+		<div class="graph">
+			<div class='tableauPlaceholder' id='viz1544339385523' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndexAnalysisStateLevel&#47;IndexAnalysisCounty&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IndexAnalysisStateLevel&#47;IndexAnalysisCounty' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IndexAnalysisStateLevel&#47;IndexAnalysisCounty&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544339385523');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			<br>
+			<p class="caption">(Hint: Use the filter functions to explore specific counties/states with extreme index values!)</p>
+		</div>
+		<br>
+
+		<div class="text">
+
+			<p> It is difficult to see trends on the county level since there are so
+many counties, and it is difficult to scan across the map of the
+U.S. to identify specific counties unless you are very familiar
+with the geography. </p>
+			<br>
+
+
+			<h3>State-Level Analysis</h3>
+			<p>The distribution of indices on the state-level show more comsumable information.</p>
+<p>Although the index analysis visualization is a little difficult to interpret, it
+	shows commonalities among states. The index
+analysis is just a stepping stone to further explore data of particular
+states. Thus, the index analysis should be used in tandem with the
+direct state comparison tool (below the index analysis visualization) to get a fuller picture of what
+is going on. </p>
+<p> Here are some suggestions for exploring the below visualizations: </p>
+			<ul>
+				<li><p>Compare California and Illinois</p></li>
+				<li><p>Compare Illinois and Rhode Island</p></li>
+				<li><p>Compare Massachusetts and Maryland</p></li>
+				<li><p>Compare Colorado and Nebraska</p></li>
+			</ul>
+			<br>
+
+
+		</div>
+
+		<div class="graph">
+			<div class='tableauPlaceholder' id='viz1544318169635' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;5H&#47;5HXS4TDJG&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;5HXS4TDJG' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;5H&#47;5HXS4TDJG&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544318169635');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			<p class="caption">(Hint: Don't forget to explore more details in the Bar Chart!)</p>
+		</div>
+		<br>
+
+		<div class="graph">
+			<div class='tableauPlaceholder' id='viz1544342909411' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompareStatisticsBetweenTwoStates&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CompareStatisticsBetweenTwoStates&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompareStatisticsBetweenTwoStates&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544342909411');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			<p class="caption"> Compare any 2 states you want, and explore more details in the house value change and demographic change! </p>
+		</div>
+		<br>
+
+		<div class="text">
+			<p> For the total population index, most of the country shows a
+fairly low index score, meaning that there is not a strong correlation
+between percent change in house value and percent change in total
+population. However, Illinois and Rhode Island have strong negative
+index values, indicating a negative correlation between percent
+change in total population and percent change in house value. In the case of Illinois, with
+an index value of -31.3, there has been a 0.1% decrease in average
+home value but a slight increase in population. Similarly Rhode
+Island, with an index value of -360.0, experienced a 0.06% decrease
+in house value but a very small increase in population.
+<p>
+In the map of indices for the Black population, there were
+lower index values for most states. California had the most extreme
+index value of 14.67. In this case, there was a 0.8% average increase
+in home value and a slight increase in the percent change in the
+Black population. </p>
+<p>
+For the index of the Asian population, essentially all the
+states have low index values (as shown by the virtually gray map).
+Upon closer inspection of individual states in the comparison
+tool, there are many states that high percent increases in
+their Asian population. For example, although
+there was a 0.08% increase in house value in California, there was
+also a 0.1976% increase in the Asian population- a value more than
+double than the percent increase in house value. </p>
+<p>
+For the index of the White population, there are a handful
+of states on the east coast with more extreme index values.
+Massachusetts and Maryland both have very high positive index
+values. Interestingly, there is an opposite average percent change in house
+value- MA at 0.1079% and MD at -0.1465%. In addition, there is
+virtually zero average percent change in the White population in
+both states. This is what causes the index value to be so great.
+The index distribution for other racial groups highlights the
+outliers in Colorado and Nebraska. Again, we see a a moderate to high percent
+change in house value and a minuscule percent change in the Other
+demographic group. </p>
+		</div>
+		<br>
+		<br>
+
+	</div>
+
+<p class="caption"> For a live site, visit </p> 
+
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
 </body>
